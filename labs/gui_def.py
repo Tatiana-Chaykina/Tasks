@@ -46,7 +46,7 @@ class Generator:
                 elif char in string.digits:
                     inf_3[char] += 1
         inf_final = []
-        for _ in range(length):
+        for i in range(length):
             if len(inf_2) > 0 and len(inf_final) < length // 4:
                 key = min(inf_2, key=inf_2.get)
                 inf_final.append(key)
